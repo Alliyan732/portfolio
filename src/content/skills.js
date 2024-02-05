@@ -4,7 +4,7 @@ const skills = [
   "js.svg",
   "html.svg",
   "css.svg",
-  "framer-motion.svg",
+  // "framer-motion.svg",
   "nodejs.svg",
   "express.svg",
   "python.svg",
@@ -14,6 +14,16 @@ const skills = [
   "mongodb.svg",
   "tailwind.svg",
   "linux.svg",
+  "laravel.svg",
+  "mysql.svg",
+  "materialUI.svg",
+  "firebase.svg",
+  "vercel.svg",
+  "react-native.svg",
+  "docker.svg",
+  "selenium.svg",
+  "expo.svg",
+  "figma_logo.png",
 ]; // Add or remove skills here, make sure to include the image respective to the skill inside the public/skills folder and use the correct file extension
 
 export default skills;
