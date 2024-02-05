@@ -33,8 +33,8 @@ const Hero = (props) => {
           options={{
             strings: [
               "An Aspiring Developer",
-              "An AI & ML Enthusiast",
-              "An IoT Enthusiast",
+              "A Full Stack Enthusiast",
+              "A MERN Stack Developer",
               "A Student",
             ],
             autoStart: true,
