@@ -40,7 +40,7 @@ const ContactForm = () => {
           <br />
         </div>
       </div>
-      <div className="contact-form">
+      {/* <div className="contact-form">
         <form name="contact" netlify>
           <input
             type="text"
@@ -57,7 +57,7 @@ const ContactForm = () => {
           ></textarea>
           <input type="submit" value="Send" />
         </form>
-      </div>
+      </div> */}
     </div>
   );
 };

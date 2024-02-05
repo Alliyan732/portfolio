@@ -1,30 +1,39 @@
 //projects start
 const projects = [
   {
-    name: "Booking.com clone",
+    name: "EYETRY",
     description:
-      "A clone of booking.com which is built using Nextjs 14 and Oxylabs webscraping API to scrape data from the official booking.com website and show as results of our queries",
+      "EYETRY (FYP): A Smart Ecommerce Application for Eye wears - (MERN Stack - React Native) Hybrid - (WEB + Mobile)",
     stack: ["React", "NodeJS", "Express", "MongoDB"],
     sourceCode: "https://github.com/randilt/booking.com-clone-nextjs14",
-    img: "/bookingcom.jpg",
+    img: "/projects/Poster.webp",
     preview: "https://bookingcomnext14.netlify.app/",
   },
   {
-    name: "Cyberscourge Hub",
+    name: "EyeAssess",
     description:
-      "An open source ultra fast markdown blog app built using Hugo and deployed on Netlify. The theme of this app is 100% custom built by me. The theme is also open source and can be found on my github profile. And I regularly write articles on this blog.",
+      "Vision Assessments App React Native.",
     stack: ["React", "NodeJS", "Express", "MongoDB"],
     sourceCode: "https://github.com/randilt/cyberscourge-hub",
-    img: "/cyberscourge.jpg",
+    img: "/projects/visionAssessmentPoster.png",
     preview: "https://rtharusha.tech",
   },
   {
-    name: "Jotion (Notion Clone)",
+    name: "PIA Industrial Project",
     description:
-      "A clone of the popular note taking app Notion. This app is built using Nextjs 13 and Tailwind CSS. It uses clerk for authentication and convex for its real time database. The project is not yet complete ",
+      "PIA Industrial Project Frontend React native ",
     stack: ["React", "NodeJS", "Express", "MongoDB"],
     sourceCode: "https://github.com/randilt/notion-clone",
-    img: "/jotion.jpg",
+    img: "/projects/pia.png",
+    preview: "#",
+  },
+  {
+    name: "Tic Tac Toe",
+    description:
+      "Tic Tac Toe Game Android Studio",
+    // stack: ["React", "NodeJS", "Express", "MongoDB"],
+    sourceCode: "https://github.com/randilt/notion-clone",
+    img: "/projects/tictactoe.png",
     preview: "#",
   },
 ];
