@@ -6,7 +6,7 @@ import Typewriter from "typewriter-effect";
 
 const Hero = (props) => {
   return (
-    <div className="container">
+    <div style={{overflow: "hidden"}} className="container">
       <motion.div
         initial={{ scale: 0 }}
         animate={{ rotate: 360, scale: 1 }}

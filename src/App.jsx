@@ -103,7 +103,7 @@ function App() {
             />
           ))}
         </div>
-        <a className="cyber-scourge" href="https://blog.randiltharusha.me">
+        <a className="cyber-scourge" href="https://github.com/Alliyan732?tab=repositories">
           View More Posts
         </a>
       </section>
