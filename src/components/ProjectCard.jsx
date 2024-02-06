@@ -9,14 +9,17 @@ const ProjectCard = (props) => {
   // };
   return (
     <div className="project-card">
-      <div className="project-img">
-        <img src={props.img} alt={props.name} />
+      <div className="project-img-div">
+        <img className="projectImg" src={props.img} alt={props.name} />
       </div>
       <div className="project-title">
         <h2>{props.name}</h2>
       </div>
       <div className="project-description">
         <p>{props.description}</p>
+      </div>
+      <div style={{marginTop: 10}} className="project-Details">
+        <p> Details: {props.details}</p>
       </div>
       <div className="project-links">
         {props.source && (

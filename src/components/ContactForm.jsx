@@ -16,7 +16,7 @@ const ContactForm = () => {
           <h3>Or find me on:</h3>
           <div className="hero-socials">
             {socials.map((social, index) => (
-              <a key={index} href={social.url}>
+              <a key={index} href={social.url} target="_blank">
                 <img src={`/socials/${social.icon}`} alt="" />
               </a>
             ))}

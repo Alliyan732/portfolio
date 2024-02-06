@@ -26,12 +26,12 @@ function App() {
       bottom: 'auto',
       marginRight: '-50%',
       transform: 'translate(-50%, -50%)',
-      backgroundColor: '#1F2945',
-      height: '600px', // Corrected property name
+      backgroundColor: 'white',
+      height: '550px', // Corrected property name
       width: '600px',
     },
   };
-  
+
   let subtitle;
   const [selectedProject, setSelectedProject] = useState(null);
   const [modalIsOpen, setIsOpen] = useState(false);
@@ -101,6 +101,7 @@ function App() {
                 name={project.name}
                 img={project.img}
                 description={project.description}
+                details={project.details}
                 source={project.sourceCode}
                 preview={project.preview}
               />
@@ -116,55 +117,89 @@ function App() {
                 contentLabel="Project Modal"
               >
                 <div style={{ flexDirection: "row", display: "flex", justifyContent: "space-between", marginBottom: 5 }}>
-                  <h2 className="text-2xl font-bold">{selectedProject.name}</h2>
+                  <h2 className="text-2xl font-bold modalText">{selectedProject.name}</h2>
                   <button
                     onClick={closeModal}
-                    className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 cursor-pointer"
+                    style={{borderRadius: 10, paddingLeft: 5, paddingRight: 5, cursor: "pointer", backgroundColor: "black", color: "white"}}
                   >
                     Close
                   </button>
                 </div>
 
                 <div className="modal-img-div"  >
-                <img className=" modal-img object-contain " src={selectedProject.img} alt="" />
+                  <img className=" modal-img object-contain " src={selectedProject.img} alt="" />
                 </div>
-                <p className="mt-4">{selectedProject.description}</p>
-                <p className="mt-2">
-                  <span className="text-gray-600">Video Link: </span>{" "}
-                  <a href={selectedProject.sourceCode} className="text-blue-500">
-                    {selectedProject.sourceCode}
-                  </a>
-                </p>
-                <p className="mt-2">
-                  <span className="text-gray-600">GitHub (Web): </span>{" "}
-                  <a href={selectedProject.sourceCode} className="text-blue-500">
-                    {selectedProject.sourceCode}
-                  </a>
-                </p>
-                <p className="mt-2">
-                  <span className="text-gray-600">GitHub (Mobile): </span>{" "}
-                  <a href={selectedProject.sourceCode} className="text-blue-500">
-                    {selectedProject.sourceCode}
-                  </a>
-                </p>
-                <p className="mt-2">
-                  <span className="text-gray-600">GitHub (Backend): </span>{" "}
-                  <a href={selectedProject.sourceCode} className="text-blue-500">
-                    {selectedProject.sourceCode}
-                  </a>
-                </p>
-                <p className="mt-2">
-                  <span className="text-gray-600">Figma Design (Web): </span>{" "}
-                  <a href={selectedProject.sourceCode} className="text-blue-500">
-                    {selectedProject.sourceCode}
-                  </a>
-                </p>
-                <p className="mt-2">
-                  <span className="text-gray-600">Figma Design (Mobile): </span>{" "}
-                  <a href={selectedProject.sourceCode} className="text-blue-500">
-                    {selectedProject.sourceCode}
-                  </a>
-                </p>
+                {/* <p className="mt-4 modalText">{selectedProject.description}</p> */}
+                {
+                  selectedProject.video !== "" ?
+                  <a href={selectedProject.video} target="_blank" >
+                    <p style={{display:"flex", alignItems: "center"}} >
+                      <span className="modalText" style={{padding: 10, marginLeft: 40}}>Video Link: </span>{" "}
+                        {/* {selectedProject.video} */}
+                        <img width={20} height={20} src="/video.svg" alt="" />
+                    </p>
+                      </a>
+                     : ""
+                }
+              
+                    <div style={{display:"flex", padding: 10, marginLeft: 40 }} >
+                      <span className="modalText">GitHub: </span>
+                      <div style={{display: "flex",  justifyItems:"center", width: 300, justifyContent: "space-between", alignItems:"center", marginLeft: 20}} >
+                      {
+                  selectedProject.githubWeb !== "" ?
+                        <a href={selectedProject.githubWeb} target="_blank">
+                      <p className=" projectLinks ">
+                          <img className="modalIconBg" width={20} height={20} src="/skills/github.svg" alt="" />
+                        <p className="modalText" style={{marginLeft: 5}}> Web </p>
+                      </p>
+                        </a>
+                         : ""
+                        }
+                                  {
+                  selectedProject.githubMobile !== "" ?
+                        <a href={selectedProject.githubMobile} target="_blank">
+                      <p className=" projectLinks ">
+                        <img className="modalIconBg" width={20} height={20} src="/skills/github.svg" alt="" />
+                        <p className="modalText" style={{marginLeft: 5}}> Mobile </p>
+                      </p>
+                        </a>
+                       : ""
+                      }
+                                 {
+                  selectedProject.githubBackend !== "" ?
+                        <a href={selectedProject.githubBackend} target="_blank">
+                      <p className=" projectLinks ">
+                        <img className="modalIconBg" width={20} height={20} src="/skills/github.svg" alt="" />
+                        <p className="modalText" style={{marginLeft: 5}}> Backend </p>
+                      </p>
+                        </a>
+                           : ""
+                          }
+                      </div>
+                    </div>
+               
+                {
+                  selectedProject.figmaWeb !== "" ?
+                    <div style={{display:"flex", marginLeft: 50, marginTop: -2 }} >
+                      <span className="text-gray-600 modalText">Figma Design: </span>
+                      <div style={{display: "flex",  justifyItems:"center", width: 300, alignItems:"center", marginLeft: 20}} >
+          
+                        <a href={selectedProject.figmaWeb} target="_blank" >
+                      <p className=" projectLinks ">
+                          <img className="modalFigmaIcon" width={20} height={20} src="/skills/figma_logo.png" alt="" />
+                        <p className="modalText" style={{marginLeft: 5}}> Web </p>
+                      </p>
+                        </a>
+                        <a href={selectedProject.figmaMobile} target="_blank" >
+                      <p className=" projectLinks" style={{marginLeft: 30}}>
+                        <img className="modalFigmaIcon" width={20} height={20} src="/skills/figma_logo.png" alt="" />
+                        <p className="modalText" style={{marginLeft: 5}}> Mobile </p>
+                      </p>
+                        </a>
+                      </div>
+                    </div>
+                    : ""
+                }
 
               </Modal>
 
@@ -172,8 +207,8 @@ function App() {
           </div>
         </motion.div>
         <div className="viewMoreBtn">
-          <a className="cyber-scourge" href="https://github.com/Alliyan732?tab=repositories">
-            View More Posts
+          <a className="cyber-scourge" target="_blank" href="https://github.com/Alliyan732?tab=repositories">
+            View More Projects
           </a>
         </div>
       </section>

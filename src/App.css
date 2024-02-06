@@ -188,15 +188,33 @@ nav {
   border-radius: 50%;
 }
 /* hero styles end */
+.modalText {
+  color: black;
+}
 .modal {
   width: 500px;
-  height: 500px;
+  /* height: 500px; */
 }
-
+.modalIconBg {
+  background-color: #212529;
+  border-radius: 100%;
+  border: 1px solid black;
+}
 .modal-img {
   width: 500px;
-  height: 350px;
+  height: 340px;
   object-fit: contain;
+}
+/* .projectImg {
+  object-fit: contain;
+}
+.project-img-div {
+  width: 100%;
+  background-color: white;
+  border-radius: 20;
+} */
+.figmaIcon {
+  margin-left: 20;
 }
 
 .modal-img-div {
@@ -206,11 +224,26 @@ nav {
   justify-content: center;
   align-items: center;
   display: flex;
+  /* border: 3px solid black; */
+  /* margin-top: 10px; */
+  /* margin-bottom: 10px; */
+  border-radius: 10px;
 }
 .modal-div {
   background-color: #222;
   border-radius: 100px;
 }
+.projectLinks {
+  display: flex;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Add a transition for smooth scaling */
+}
+
+.projectLinks:hover {
+  transform: scale(1.1); /* Increase the size by 10% on hover */
+}
+
+
 .project-links {
   margin-top: 20px;
 }
@@ -327,9 +360,14 @@ footer {
 .project-title h2,
 .project-description p {
   text-align: center;
+  margin-bottom: 10;
 }
 .project-title h2 {
   font-size: 30px;
+}
+.project-Details{
+  font-size: small;
+  font-weight: normal;
 }
 .project-tag p {
   padding: 8px;
@@ -548,12 +586,12 @@ form > input[type="submit"]:hover {
   background-color: #D22B2B;
   border-radius: 10px;
   transition: 0.2s all ease-in-out;
-  box-shadow: 0 8px 32px 0 rgba(135, 47, 31, 0.6);
+  /* box-shadow: 0 8px 32px 0 rgba(135, 47, 31, 0.6); */
 }
 .navbar-btn:hover {
   transform: scale(1.1);
   background-color: #f10505;
-  box-shadow: 0 8px 32px 0 rgba(135, 47, 31, 0.8);
+  /* box-shadow: 0 8px 32px 0 rgba(135, 47, 31, 0.8); */
 }
 .wrapper {
   width: auto;
