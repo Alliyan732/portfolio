@@ -503,8 +503,14 @@ form > input[type="submit"]:hover {
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-
   gap: 30px;
+}
+
+@media screen and (max-width: 700px) {
+  .contact-section {
+    width: 100%; /* Adjust width for smaller screens */
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
 }
 .contact-info {
   flex: 3;
@@ -524,6 +530,12 @@ form > input[type="submit"]:hover {
 }
 .contact-info .hero-socials {
   gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-info .hero-socials {
+    gap: 10px; 
+  }
 }
 .contact-links {
   display: flex;

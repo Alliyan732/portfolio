@@ -20,7 +20,7 @@ const BlogPost = (props) => {
       </div>
       <div className="project-links">
         <a href={props.read} target="_blank">
-          Varify <FaExternalLinkAlt />
+          Verify <FaExternalLinkAlt />
         </a>
       </div>
 
