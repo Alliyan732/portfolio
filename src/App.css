@@ -340,6 +340,13 @@ footer {
   transition: 0.2s all ease-in-out;
   cursor: pointer;
 }
+
+@media screen and (max-width: 576px) {
+  .project-card {
+    /* width: calc(100% - 50px);  */
+    margin: 20px auto; /* Center-align the card on extra small screens */
+  }
+}
 .project-card:hover {
   transform: scale(1.05);
 }
@@ -506,12 +513,13 @@ form > input[type="submit"]:hover {
   gap: 30px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 576px) {
   .contact-section {
-    width: 100%; /* Adjust width for smaller screens */
-    flex-direction: column; /* Stack items vertically on smaller screens */
+    width: 100%; /* Adjust width for extra small screens */
+    margin: 20px auto; /* Center-align the card on extra small screens */
   }
 }
+
 .contact-info {
   flex: 3;
   margin-left: 50px;
@@ -532,9 +540,9 @@ form > input[type="submit"]:hover {
   gap: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .contact-info .hero-socials {
-    gap: 10px; 
+    gap: 5px;
   }
 }
 .contact-links {
@@ -679,15 +687,21 @@ form > input[type="submit"]:hover {
 .cyber-scourge {
   text-decoration: none;
   color: #fff;
-  font-size: 30px;
-  margin-top: 30px;
-  padding: 10px;
+  font-size: 20px;
+  margin-top: 50px;
+  padding: 8px;
   background-color: #D22B2B;
   border-radius: 10px;
   /* box-shadow: 0 8px 32px 0 rgba(135, 47, 31, 0.6); */
   margin-bottom: 20px;
   transition: 0.2s all ease-in-out;
 }
+/* @media screen and (max-width: 576px) {
+  .cyber-scourge {
+    font-size: 20px;
+    padding: 8px; 
+  }
+} */
 .cyber-scourge:hover {
   transform: scale(1.1);
   background-color: #f10505;
