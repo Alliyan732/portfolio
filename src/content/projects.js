@@ -18,7 +18,7 @@ const projects = [
   {
     name: "EyeAssess",
     description:
-      "Vision Assessments App React Native.",
+    "Vision Assessments App React Native.",
     // stack: ["React", "NodeJS", "Express", "MongoDB"],
     details: "EyeAssess empowers you to take charge of your vision with a comprehensive suite of eye tests on your mobile or web browser. Assess your vision acuity, colorblindness, contrast sensitivity, and astigmatism in the comfort of your own space. Gain valuable insights, track your progress over time, and access informative eye health resources – all within one user-friendly platform. See confidently, act proactively, with EyeAssess.",
     img: "/projects/visionAssessmentPoster.png",
@@ -33,7 +33,7 @@ const projects = [
   {
     name: "PIA Industrial Project",
     description:
-      "PIA Industrial Project Frontend React native ",
+    "PIA Industrial Project Frontend React native ",
     // stack: ["React", "NodeJS", "Express", "MongoDB"],
     details: "I developed the frontend and integration of weather APIs for PIA Mobile App, a comprehensive mobile application designed to manage employee records, flight information, weather monitoring. This user-friendly platform offers centralized access to crucial data, streamlining workflows and facilitating informed decision-making for PIA employees.",
     img: "/projects/pia.png",
@@ -44,6 +44,19 @@ const projects = [
     sourceCode: "",
     figmaWeb: "",
     figmaMobile: ""
+  },
+  {
+    name: "Carvaan",
+    description:
+      "Carvaan Is A Ride Hailing App Built in React Native With Firebase",
+    details: "This app boasts a clean, minimalist UI designed to enhance usability and efficiency. Users can effortlessly request rides, track their driver's location in real-time, and securely pay for their trips through integrated payment gateways. With customizable preferences and a variety of vehicle options, passengers enjoy personalized transportation solutions tailored to their needs.",
+    img: "/projects/carvaan.png",
+    video: "",
+    githubWeb: "",
+    githubMobile: "https://github.com/Alliyan732/carvaan-ride-hailing",
+    githubBackend: "",
+    sourceCode: "",
+    figmaMobile: "https://www.figma.com/file/e56vhfgrQJHYteeV5PKW2o/App-Designs?type=design&node-id=233%3A922&mode=design&t=lr9TkOpUtUgQr9Cn-1",
   },
   {
     name: "Ekart Ecommerce",
